@@ -1,7 +1,7 @@
-:root {
+:root{
     --background-color: black;
 }
-body {
+body{
     padding: 0;
     margin: 0;
     min-height: 100vh;
@@ -14,34 +14,34 @@ body {
     transform-style: preserve-3d;
 }
 
-@property --c1 {
+@property --c1{
     syntax: "<percentage>";
     inherits: false;
     initial-value: 0%;
 }
-@property --c2 {
+@property --c2{
     syntax: "<percentage>";
     inherits: false;
     initial-value: 0%;
 }
-@property --scale1 {
+@property --scale1{
     syntax: "<number>";
     inherits: false;
     initial-value: 1;
 }
-@property --O {
+@property --O{
     syntax: "<number>";
     inherits: false;
     initial-value: 1;
 }
-.parent {
+.parent{
     width: 30rem;
     aspect-ratio: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.circle {
+.circle{
     position: absolute;
     width: 30rem;
     aspect-ratio: 1;
@@ -56,7 +56,7 @@ body {
     transform: scale(var(--scale1));
     animation: show1 3.5s linear infinite;
 }
-.circle2 {
+.circle2{
     position: absolute;
     width: 20rem;
     opacity: var(--0);
@@ -72,38 +72,38 @@ body {
     animation: show2 3.5s linear infinite;
 }
 
-@keyframes show1 {
-    0% {
+@keyframes show1{
+    0%{
         opacity: 0;
         --c1: 0%;
         --scale1: .4;
     }
-    5% {
+    5%{
         opacity: 0;
     }
-    25%, 80% {
+    25%, 80%{
         opacity: 1;
     }
-    100% {
+    100%{
         opacity: 0;
         --c1: 100%;
         --scale1: 1.7;
     }
 }
 
-@keyframes show2 {
-    0% {
+@keyframes show2{
+    0%{
         opacity: 0;
         --c2: 0%;
         --scale1: .4;
     }
-    30% {
+    30%{
         opacity: 0;
     }
-    70%, 80% {
+    70%, 80%{
         opacity: 1;
     }
-    100% {
+    100%{
         opacity: 0;
         --c2: 100%;
         --scale1: 1.7;
