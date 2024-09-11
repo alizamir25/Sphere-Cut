@@ -13,7 +13,6 @@ body{
     perspective: 80rem;
     transform-style: preserve-3d;
 }
-
 @property --c1{
     syntax: "<percentage>";
     inherits: false;
@@ -71,7 +70,6 @@ body{
     transform: scale(var(--scale1));
     animation: show2 3.5s linear infinite;
 }
-
 @keyframes show1{
     0%{
         opacity: 0;
@@ -90,7 +88,6 @@ body{
         --scale1: 1.7;
     }
 }
-
 @keyframes show2{
     0%{
         opacity: 0;
